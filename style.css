@@ -1,0 +1,253 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-family: "Playwrite HU", cursive;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;;
+}
+
+nav {
+    background-color: slategrey ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0px 2px 14px 10px rgba(0,0,0,0.21);
+-webkit-box-shadow: 0px 2px 14px 10px rgba(0,0,0,0.21);
+-moz-box-shadow: 0px 2px 14px 10px rgba(0,0,0,0.21);
+}
+
+.menu a {
+    margin: 2rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* hero */
+#hero {
+    display: flex;
+    align-items: center;
+    padding: 7rem 6rem 3rem 2rem ;
+}
+
+.kiri {
+    width: 60%;
+}
+
+.kiri h1 {
+    color: black;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.kanan {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.kanan img {
+    width: 300px;
+    border-radius: 2rem;
+
+}
+
+.button {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(87, 141, 186);
+    border: 2px solid rgb(87, 141, 186) ;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    border-radius: 1000rem;
+}
+
+.button a:hover {
+    background-color: rgb(87, 141, 186);
+    color: white;
+}
+
+/* skill */
+
+#skills{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 5rem 0 10rem 0;
+}
+
+#skills h1 {
+    font-size: 50px;
+}
+
+.skill img {
+    width: 45px;
+}
+
+.skill {
+    border: 2px solid lightgrey;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;    
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* testimoni */
+
+#testimoni h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-card {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.pekerjaan {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.deskripsi {
+    color: #444;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.profile-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+#contact {
+    background-color: whitesmoke;
+    padding: 5rem 0 10rem 0;
+    text-align: center;
+}
+
+#contact img {
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.apalah {
+    display: flex;
+    justify-content: center;
+}
+
+.kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.kontak a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border: 2px solid;
+    margin: 5px; 
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.kontak a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: small;
+        margin: 0.5rem;
+    }
+
+    #hero {
+        flex-direction: column-reverse  ;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .kiri {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .kanan {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .apalah {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+.gambar {
+    width: 300px;
+}
